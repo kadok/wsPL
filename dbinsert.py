@@ -1,16 +1,17 @@
 import os
 import json
 from pymongo import MongoClient
+from config import Config
 
 #Connect to MongoDB
-client = MongoClient("mongodb://localhost:27017/") 
+client = MongoClient(Config.DB_LINK) 
 
 #Select or Create a Database
-db = client["pl"]
-collection = db["premier"]
+db = client[Config.DATABASE]
+collection = db[Config.COLLECTION]
 
 #Load the JSON Data
-folder = "data"
+folder = Config.DATA
 
 for file in os.listdir(folder):
     if file.endswith(".json"):

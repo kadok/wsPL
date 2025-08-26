@@ -1,11 +1,13 @@
 from pymongo import MongoClient
+from config import Config
 
 #Connect to MongoDB
-client = MongoClient("mongodb://localhost:27017/") 
+client = MongoClient(Config.DB_LINK) 
 
 #Select or Create a Database
-db = client["pl"]
-collection = db["premier"]
+db = client[Config.DATABASE]
+collection = db[Config.COLLECTION]
+
 '''
 #Filter registers by season
 season = "1992-93"

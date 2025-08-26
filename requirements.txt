@@ -2,3 +2,6 @@ requests==2.32.4
 logger==1.4
 bs4==0.0.2
 pymongo
+pandas
+bar_chart_race
+dotenv

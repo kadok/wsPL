@@ -1,11 +1,12 @@
 import pandas as pd
 from pymongo import MongoClient
 import bar_chart_race as bcr
+from config import Config
 
 #Connect to MongoDB
-client = MongoClient("mongodb://localhost:27017/")
-db = client["pl"]
-collection = db["premier"]
+client = MongoClient(Config.DB_LINK) 
+db = client[Config.DATABASE]
+collection = db[Config.COLLECTION]
 
 # Search all registers
 docs = list(collection.find({}, {"season": 1, "owner.name.display": 1, "value": 1, "_id": 0}))
@@ -47,11 +48,13 @@ for i in range(extra_frames):
 # Create the Animated Graph
 bcr.bar_chart_race(
     df=pivot_cumulative,
-    filename="Top20.mp4",
+    filename="Top20_h.mp4",
     title="Premier League Top 20 Scorers",
     n_bars=20,
     fixed_order=False,
     fixed_max=True,
     steps_per_period=40,
-    period_length=2000
+    period_length=2000,
+    figsize=(6, 10.67),
+    dpi=200
 )
