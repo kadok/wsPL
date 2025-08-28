@@ -57,6 +57,27 @@ python dbinsert.py
 python topscorer.py
 ```
 
+## Others Statistics
+
+1. Generate Goals per Country - Map
+
+```bash
+python goalsmap.py
+```
+
+2. Generate Goals per Country - List
+
+```bash
+python goalspercountrylist.py
+```
+
+3. Generate Goals per Country - Polar Histogram
+
+```bash
+python goalspercountry.py
+```
+
+
 ## Future Additions
 
 - **Instead using MongoDB use Pandas consuming the CSV files**
