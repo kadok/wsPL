@@ -57,6 +57,10 @@ python dbinsert.py
 python topscorer.py
 ```
 
+![Bar](images/bar.png?raw=true)
+
+
+
 ## Others Statistics
 
 1. Generate Goals per Country - Map
@@ -65,17 +69,25 @@ python topscorer.py
 python goalsmap.py
 ```
 
+![Map](images/map.png?raw=true)
+
+
 2. Generate Goals per Country - List
 
 ```bash
 python goalspercountrylist.py
 ```
 
+![List](images/list.png?raw=true)
+
+
 3. Generate Goals per Country - Polar Histogram
 
 ```bash
 python goalspercountry.py
 ```
+
+![Polar Histogram](images/polar.png?raw=true)
 
 
 ## Future Additions
