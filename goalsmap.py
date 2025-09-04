@@ -35,7 +35,7 @@ df = df.rename(columns={"value": "goals"})
 country_goals = df.groupby("country")["goals"].sum().reset_index()
 
 # Printing the dataframe to verification
-print("Total de gols por país:")
+print("Total goals by country:")
 print(country_goals.to_string())
 
 # Create the interactive world map using plotly
@@ -46,8 +46,8 @@ fig = px.choropleth(
     color="goals",
     hover_name="country",
     color_continuous_scale=px.colors.sequential.Plasma,
-    title="Premier League: Total of Goals per Country",
-    labels={'goals':'Total of Goals'}
+    title="Premier League: Total Goals by Country",
+    labels={'goals':'Total Goals'}
 )
 
 # Save the graph on HTML file
