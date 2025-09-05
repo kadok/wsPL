@@ -63,7 +63,7 @@ python topscorer.py
 
 ## Others Statistics
 
-1. Generate Goals per Country - Map
+1. Generate Goals by Country - Map
 
 ```bash
 python goalsmap.py
@@ -72,23 +72,36 @@ python goalsmap.py
 ![Map](images/map.png?raw=true)
 
 
-2. Generate Goals per Country - List
+2. Generate Goals by Country - List
 
 ```bash
-python goalspercountrylist.py
+python goalsbycountrylist.py
 ```
 
 ![List](images/list.png?raw=true)
 
 
-3. Generate Goals per Country - Polar Histogram
+3. Generate Goals by Country - Polar Histogram
 
 ```bash
-python goalspercountry.py
+python goalsbycountry.py
 ```
 
 ![Polar Histogram](images/polar.png?raw=true)
 
+
+4. Generate Goals by Position
+
+```bash
+python goalsbyposition.py
+```
+
+
+5. Generate Goals by Season
+
+```bash
+python goalsbyseason.py
+```
 
 ## Future Additions
 
