@@ -5,3 +5,4 @@ pymongo
 pandas
 bar_chart_race
 dotenv
+plotly
