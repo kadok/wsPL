@@ -71,6 +71,9 @@ python goalsmap.py
 
 ![Map](images/map.png?raw=true)
 
+Link:
+https://radiant-cranachan-a79211.netlify.app/premierleague_goals_worldmap
+
 
 2. Generate Goals by Country - List
 
@@ -79,6 +82,9 @@ python goalsbycountrylist.py
 ```
 
 ![List](images/list.png?raw=true)
+
+Link:
+https://radiant-cranachan-a79211.netlify.app/premierleague_goals_ranking
 
 
 3. Generate Goals by Country - Polar Histogram
@@ -89,6 +95,9 @@ python goalsbycountry.py
 
 ![Polar Histogram](images/polar.png?raw=true)
 
+Link:
+https://radiant-cranachan-a79211.netlify.app/premierleague_polar_histogram
+
 
 4. Generate Goals by Position
 
@@ -96,12 +105,19 @@ python goalsbycountry.py
 python goalsbyposition.py
 ```
 
+![Line](images/line.png?raw=true)
+
+Link:
+https://radiant-cranachan-a79211.netlify.app/goals_by_position_interactive.html
+
 
 5. Generate Goals by Season
 
 ```bash
 python goalsbyseason.py
 ```
+![Line Gif](images/linegif.gif?raw=true)
+
 
 ## Future Additions
 
